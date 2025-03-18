@@ -1,8 +1,11 @@
-from typing import Any, Dict, Optional
+from typing import Any, Dict, List, Optional
 
 from sqlalchemy import Boolean, Column, ForeignKey, Integer, String, inspect
 from sqlalchemy.ext.declarative import as_declarative
 from sqlalchemy.orm import relationship
+
+from pydantic import EmailStr
+from sqlmodel import Field, Relationship, SQLModel
 
 
 @as_declarative()
@@ -33,12 +36,6 @@ class Item(Base):
     description = Column(String, index=True)
     owner_id = Column(Integer, ForeignKey("user.id"))
     owner = relationship("User", back_populates="items")
-
-
-from typing import List
-
-from pydantic import EmailStr
-from sqlmodel import Field, Relationship, SQLModel
 
 
 class Users(SQLModel, table=True):

@@ -23,7 +23,9 @@ jobs:
         uses: actions/cache@v1
         with:
           path: ~/.cache/pip
-          key: lint-pip-${{ matrix.python-version }}-${{ hashFiles('**/pyproject.toml') }}
+          key:
+            lint-pip-${{ matrix.python-version }}-${{
+            hashFiles('**/pyproject.toml') }}
           restore-keys: |
             lint-pip-${{ matrix.python-version }}-
 
