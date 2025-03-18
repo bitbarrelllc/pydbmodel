@@ -1,30 +1,26 @@
-<h1 align="center">
-    <strong>dbml</strong>
-</h1>
-<p align="center">
-    <a href="https://github.com/Kludex/dbml" target="_blank">
-        <img src="https://img.shields.io/github/last-commit/Kludex/dbml" alt="Latest Commit">
-    </a>
-        <img src="https://img.shields.io/github/workflow/status/Kludex/dbml/Test">
-        <img src="https://img.shields.io/codecov/c/github/Kludex/dbml">
-    <br />
-    <a href="https://pypi.org/project/dbml" target="_blank">
-        <img src="https://img.shields.io/pypi/v/dbml" alt="Package version">
-    </a>
-    <img src="https://img.shields.io/pypi/pyversions/dbml">
-    <img src="https://img.shields.io/github/license/Kludex/dbml">
-</p>
+# pyDBModeL
+
+pyDBModeL is a powerful tool designed to facilitate the conversion between SQLAlchemy/SQLModel and Database Markup Language (DBML). Whether you need to generate DBML files from your SQLAlchemy models or create SQLAlchemy models from DBML files, pyDBModeL has you covered. This tool aims to streamline database schema management and improve the workflow for developers working with SQLAlchemy and DBML.
+
+Key Features:
+- Convert SQLAlchemy/SQLModel models to DBML format.
+- Generate SQLAlchemy/SQLModel models from DBML files.
+- Supports a wide range of SQLAlchemy data types.
+- Easy-to-use command-line interface.
+- Integration with popular Python libraries such as Pydantic, Typer, and Rich.
+
+With pyDBModeL, you can effortlessly manage your database schemas and ensure consistency between your codebase and DBML documentation.
 
 ## Installation
 
 ```bash
-pip install dbml
+pip install pydbmodel
 ```
 
 ## Usage
 
 ```bash
-dbml <module>:<base_class>
+pydbmodel <module>:<base_class>
 ```
 
 ## References
@@ -36,4 +32,4 @@ dbml <module>:<base_class>
 
 ## License
 
-This project is licensed under the terms of the MIT license.
+This project is licensed under the terms of the BSD-3 Clause License.
